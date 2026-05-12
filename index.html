@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Starfall Arena</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="ui">
+  <div id="topbar">
+    <div class="pill">Starfall Arena</div>
+    <div class="pill">WASD Move</div>
+    <div class="pill">Mouse Aim</div>
+    <div class="pill">Click Shoot</div>
+    <div class="pill">Space Jump</div>
+    <div class="pill">E Build</div>
+  </div>
+  <div id="crosshair"></div>
+  <div id="hud">
+    <div class="barwrap"><span>HP</span><div class="bar"><i id="hpbar"></i></div><b id="hptext">100</b></div>
+    <div class="barwrap"><span>Shield</span><div class="bar"><i id="shbar"></i></div><b id="shtext">0</b></div>
+    <div class="statline"><span>Ammo</span><b id="ammotext">30</b></div>
+    <div class="statline"><span>Elims</span><b id="elimstext">0</b></div>
+    <div class="statline"><span>Zone</span><b id="zonetext">Safe</b></div>
+    <div id="msg">Click to play</div>
+  </div>
+  <div id="mini"></div>
+</div>
+<canvas id="c"></canvas>
+<script type="module" src="game.js"></script>
+</body>
+</html>
